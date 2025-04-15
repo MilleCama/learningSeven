@@ -1,0 +1,221 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+    display: grid;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+div#navWrapper {
+    grid-row-start: 4;
+}
+#top a, #navlinks > a {
+    display: block;
+    text-align: right;
+    font-size: 1.5rem;
+    height: 44px;
+    text-decoration: none;
+    color: #333;
+}
+#top a {
+    font-size: 2rem;
+}
+#navlinks > a {
+    padding: 15px 13px 0 0;
+}
+nav {
+    height: 100vh;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li a {
+        display:block;
+        color: $primaryColor;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+} // end nav
+
+form.my-form {
+    padding-left: 2rem;
+    margin: 1rem $gutter;
+  
+    label {
+      display: block;
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 0.25rem;
+      padding-top: 0.5rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      color: #960a0a;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      font-weight: 700;
+    }
+  
+    // Shared input styles
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+      display: block;
+      margin: 0.25rem 0 1rem 0;
+      width: 300px;
+      font-size: 1rem;
+      color: #333;
+      font-family: "Lato", sans-serif;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      border-left: 5px solid #f76c2f; // default left border
+      background-color: white;
+      box-shadow: 0 3px 3px -2px rgba(247, 108, 47, 0.3);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    
+  
+    // Dynamic left color indicators
+    input:required {
+      border-left-color: #960a0a; // dark red for required
+    }
+  
+    input:focus {
+      border-left-color: #0a1896; // deep blue on focus
+    }
+  
+    input:required:valid {
+      border-left-color: none; // orange on valid
+    }
+  
+    // Date field fix
+    input[type="date"] {
+      background-color: white;
+    }
+  
+    // Submit button
+    input[type="submit"] {
+      border: none;
+      background-color: #960a0a;
+      color: white;
+      border-radius: 999px;
+      padding: 0.75rem 1.5rem;
+      margin: 2rem 0;
+      width: 250px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    input[type="submit"]:hover {
+      background-color: #720707;
+    }
+  }
+  
+    
+
+
+
+
+
+
+
+form.my-form h3 {
+    font-size: 1rem;
+    color: #960a0a;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+}
+form.my-form {
+    padding-left: 2rem;
+}
+form.my-form label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: .25rem;
+}
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}// end main
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer

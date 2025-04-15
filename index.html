@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Dove University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Fav icon-->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img src="images/logo1x.png" alt="logo">
+		<span>Design Thinking</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005;</a>
+        <ul>
+            <li><a href="#">Students</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Tuition</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <h1>Apply</h1>
+        <p>Thank you for your interest in Dove University! As part of the application process, you must create an account in order to track your admission documents and receive information from us. Sections with a red border are required information. If you have any questions, please contact the Admissions Office at 1-800-555-1234.</p>
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+        <h3> Contact Information:</h3>
+        <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+        <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+        <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Number"></label>
+        <label>Email: <input type="email" name="email" autocomplete="email" required title="Email Address"></label>
+        <label>Address: <input type="text" name="address" autocomplete="address-line1" title="Street Address"></label>
+        <label>City: <input type="text" name="city" autocomplete="address-level2" title="City"></label>
+        <label>State: <input type="text" name="state" autocomplete="address-level1" title="State"></label>
+        <label>Zip Code: <input type="text" name="zipcode" autocomplete="postal-code" title="Postal Code"></label>
+
+
+
+         <h3>Communication Preferences</h3>
+                <label><input type="radio" name="preference" value="text-message">Send Text Message Updates</label>
+                <label><input type="radio" name="preference" value="email">Send Email Updates</label>
+                <label><input type="radio" name="preference" value="mail">Snail Mail Updates</label>
+            
+                <h3>Previous School Information</h3>
+                <label>School Type
+                    <select name="prevschooltype">
+                        <option value="Border"> Border</option>
+                        <option value="State"> State</option>
+                        <option value="Private"> Private</option>
+                    </select>
+                </label>
+                <label>High School Graduation Date
+                <input type="date" name="highschoolgraduationdate">
+                </label>
+
+        <h3>Education Completed</h3>
+        <label><input type="checkbox" name="ged">GED</label>
+        <label><input type="checkbox" name="hsdiploma">High School Diploma</label>
+        <label><input type="checkbox" name="twoassociate">Two Year Associates Degree</label>
+
+        <h3>Account Information</h3>
+        <label>Username (5-10 letters)<input type="text" name="username" pattern="[A-Za-z]{5,10}" required title="Please enter a username that is between 6 and 10 characters long"></label>
+        <label>Password (at least 6 characters long)<input type="password" name="password" minlength="6" required title="Please enter a password that is at least 6 characters long"></label>
+
+            <input type="submit" value="Submit Form">
+        </form>
+     
+     
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; Dove University All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
